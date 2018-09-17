@@ -1,6 +1,15 @@
 package com.bigwhite.di01;
 
 public class Student {
+	
+	public Student() {
+		super();
+	}
+	public Student(int age, String name) {
+		super();
+		this.age = age;
+		this.name = name;
+	}
 	private int age;
 	public int getAge() {
 		return age;

@@ -10,5 +10,6 @@
     底层通过class.forName实现类
     -->
 	<bean id="someservice" class="com.bigwhite.service.SomeServiceImpl"/>	
-	
+	<bean id="someservice2" class="com.bigwhite.service.SomeServiceImpl" scope="singleton"/>
+	<bean id="someservice3" class="com.bigwhite.service.SomeServiceImpl" scope="prototype"/>
 </beans>

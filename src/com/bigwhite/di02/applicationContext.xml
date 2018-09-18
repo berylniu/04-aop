@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+     <!--  设值注入,新增命名空间场景-->   
+   <bean id="mySchool" class="com.bigwhite.di02.School">
+   <property name="sname" value="清华大学"/>
+   </bean>
+     
+  <bean id="student" class="com.bigwhite.di02.Student">
+  	<property name="age" value="12"/>
+  	<property name="name" value="beryl"/>
+  	<property name="school" ref="mySchool"/>
+  </bean>
+  
+  <!-- 构造注入 ，新增命名空间场景-->
+  <bean id="mySchool1" class="com.bigwhite.di02.School">
+  	<constructor-arg name="sname" value="北京大学"/>
+  </bean>
+  
+  <bean id="student1" class="com.bigwhite.di02.Student">
+  	<constructor-arg name="age" value="15"/>
+  	<constructor-arg name="name" value="white"/>
+  	<constructor-arg name="school" ref="mySchool1"/>
+  </bean>
+
+</beans>

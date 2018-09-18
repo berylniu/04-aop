@@ -4,11 +4,14 @@
     xsi:schemaLocation="
         http://www.springframework.org/schema/beans 
         http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
      <!--  设值注入-->   
+     
   <bean id="student" class="com.bigwhite.di01.Student">
   	<property name="age" value="12"/>
   	<property name="name" value="beryl"/>
   </bean>
+  
   <!-- 构造注入 -->
   <bean id="student1" class="com.bigwhite.di01.Student">
   	<constructor-arg name="age" value="15"/>

@@ -13,6 +13,8 @@ public class MyTest {
 		ApplicationContext ac = new ClassPathXmlApplicationContext(config);
 		Student s = (Student) ac.getBean("student");
 		System.out.println(s);
+		Student s1 = (Student) ac.getBean("student");
+		System.out.println(s1);
 	}
 }
 

@@ -1,8 +1,11 @@
 package com.bigwhite.di01;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+@Scope("prototype")  //原型模式
+//@Scope("singleton")  单例模式
 @Component("student")
 public class Student {
 	@Value("beryl")
@@ -46,9 +49,6 @@ public class Student {
 		this.school = school;
 	}
 
-	@Override
-	public String toString() {
-		return "Student [name=" + name + ", age=" + age + ", school=" + school + "]";
-	}
+	
 	
 }

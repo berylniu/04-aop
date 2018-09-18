@@ -1,34 +1,54 @@
 package com.bigwhite.di01;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("student")
 public class Student {
+	@Value("beryl")
 	private String name;
+	@Value("12")
 	private int age;
 	private School school;
 	
 	public Student() {
 		super();
 	}
-	public Student(int age, String name) {
+
+	public Student(String name, int age, School school) {
 		super();
-		this.age = age;
 		this.name = name;
-	}
-	
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
 		this.age = age;
+		this.school = school;
 	}
+
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public School getSchool() {
+		return school;
+	}
+
+	public void setSchool(School school) {
+		this.school = school;
+	}
+
 	@Override
 	public String toString() {
-		return "Student [age=" + age + ", name=" + name + "]";
+		return "Student [name=" + name + ", age=" + age + ", school=" + school + "]";
 	}
 	
 }

@@ -1,6 +1,11 @@
 package com.bigwhite.di01;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("mySchool")
 public class School {
+	@Value("你好大学")
 	private String sname;
 
 	public String getSname() {
@@ -13,7 +18,6 @@ public class School {
 
 	public School() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public School(String sname) {

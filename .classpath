@@ -8,6 +8,7 @@
 	<classpathentry kind="lib" path="lib/spring-expression-5.0.9.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-jcl-5.0.9.RELEASE.jar"/>
 	<classpathentry kind="lib" path="lib/spring-aop-4.3.9.RELEASE.jar"/>
+	<classpathentry kind="lib" path="lib/spring-test-5.0.9.RELEASE.jar"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

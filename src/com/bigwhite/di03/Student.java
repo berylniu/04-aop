@@ -1,4 +1,4 @@
-package com.bigwhite.di02;
+package com.bigwhite.di03;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

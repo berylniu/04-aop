@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+   <bean id="student" class="com.bigwhite.di05.Student">
+   	<property name="name" value="小小白"/>
+   	<property name="age" value="#{ T(java.lang.Math).random() * 50.0 }"/>
+   </bean> 
+   <!-- 通过表达式 -->
+   <bean id="person" class="com.bigwhite.di05.Person">
+   	<property name="pname" value="#{student.name}"/>
+   	<property name="page" value="#{student.age > 27 ? 27 : student.age}"/>
+   </bean> 
+</beans>

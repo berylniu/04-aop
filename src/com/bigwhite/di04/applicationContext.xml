@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+        
+     <!--  设值注入,域属性自动注入-->   
+   <bean id="school" class="com.bigwhite.di04.School">
+   <property name="sname" value="清华大学"/>
+   </bean>
+   <bean id="school1" class="com.bigwhite.di04.BaseSchool">
+   	<property name="sname" value="北京大学"/>
+   	<property name="address" value="北京大学周边"/>
+   </bean>
+     <!-- autowire可以设置为byName，default ,byType-->
+  <bean id="student" class="com.bigwhite.di04.Student" autowire="byName">
+  	<property name="age" value="12"/>
+  	<property name="name" value="beryl"/>	
+ 	</bean>
+  
+</beans>

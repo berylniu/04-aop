@@ -48,7 +48,4 @@ public class Student {
 	public void setSchool(School school) {
 		this.school = school;
 	}
-
-	
-	
 }

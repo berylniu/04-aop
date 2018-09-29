@@ -16,7 +16,7 @@ public class MyTest {
 //		ISomeService service = (ISomeService) ac.getBean("someServiceImpl");
 		service.doFirst();
 		System.out.println("==========");
-		service.doSecond();
+		System.out.println(service.doSecond());
 		System.out.println("==========");
 		service.doThird();
 		System.out.println("==========");

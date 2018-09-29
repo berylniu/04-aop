@@ -10,8 +10,9 @@ public class SomeServiceImpl implements ISomeService {
 		System.out.println("执行doFirst");
 	}
 	@Override
-	public void doSecond() {
+	public String doSecond() {
 		System.out.println("执行doSecond");
+		return "牛小牛";
 	}
 	@Override
 	public void doThird() {
